@@ -8,6 +8,6 @@ if is_integer(a) and is_integer(b) and is_integer(c):
     b = int(b)
     c = int(c)
     x = a + b * 4 - c
-    print(f"Решение уравнения x = a + b * 4 - c: x = {x}")
+    print(f"Решение уравнения x = a + b * 4 - c : x = {x}")
 else:
     print("Ошибка: Введены некорректные данные. Введите целые числа.")
