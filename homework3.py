@@ -1,11 +1,12 @@
-def convert(n):
-    if n < 5:
-        return str(n)
-    else:
-        return convert(n // 5) + str(n % 5)
-x = input("Введите целое десятичное число: ")
-if x.isdigit():
-    x = int(x)
-    print(f"Пятеричная система счисления: {convert(x)}")
+a = input("Введите целое простое число a: ")
+b = input("Введите целое простое число b: ")
+c = input("Введите целое простое число c: ")
+
+if a.isdigit() and b.isdigit() and c.isdigit():
+    a = int(a)
+    b = int(b)
+    c = int(c)
+    result = a+b*4-c
+        print(f"Результат в десятичной системе: {result}")
 else:
-    print("Ошибка: введите корректное число.")
+    print("Ошибка: введите корректные целые числа")
